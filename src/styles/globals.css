@@ -1,21 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+  --color-black: #1d1d1d;
+  --color-white: #ffffff;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+  /* Primary Palette */
+  --color-primary-50: #f6f5fd;
+  --color-primary-100: #eeecfb;
+  --color-primary-200: #e0dcf8;
+  --color-primary-300: #c8bff3;
+  --color-primary-400: #ac9aeb;
+  --color-primary-500: #8f71e1;
+  --color-primary-600: #7e53d4;
+  --color-primary-700: #6f42c1;
+  --color-primary-800: #5c36a4;
+  --color-primary-900: #4d2e84;
+  --color-primary-950: #2f1c59;
 
+  /* Text Colors */
+  --color-text-base: #1d1d1d;
+  --color-text-muted: #71717a;
+  --color-text-light: #ffffff;
+
+  /* Background Colors */
+  --color-bg-default: #f4f8ff;
+  --color-bg-dark: #1d1d1d;
+  --color-bg-muted: #f6f5fd;
+}
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Manrope", sans-serif;
+  background-color: var(--color-bg-default);
+}
+.container {
+  @apply mx-auto;
 }

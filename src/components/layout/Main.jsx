@@ -1,11 +1,13 @@
-import React from 'react';
+import React from "react";
+import Header from "./Header";
 
-const Main = () => {
-    return (
-        <div>
-            
-        </div>
-    );
+const Main = ({ children }) => {
+  return (
+    <div>
+      <Header />
+      {children}
+    </div>
+  );
 };
 
 export default Main;

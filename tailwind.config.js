@@ -12,20 +12,19 @@ module.exports = {
       },
       fontSize: {
         // Define Heading styles
-        h1: ["48px", { lineHeight: "1.3", }],
-        h2: ["40px", { lineHeight: "1.3",}],
-        h3: ["33px", { lineHeight: "1.3",}],
-        h4: ["28px", { lineHeight: "1.3",  }],
-        h5: ["23px", { lineHeight: "1.3", }],
-        h6: ["16px", { lineHeight: "1.3 ",}],
+        h1: ["48px", { lineHeight: "1.3" }],
+        h2: ["40px", { lineHeight: "1.3" }],
+        h3: ["33px", { lineHeight: "1.3" }],
+        h4: ["28px", { lineHeight: "1.3" }],
+        h5: ["23px", { lineHeight: "1.3" }],
+        h6: ["16px", { lineHeight: "1.3 " }],
         // Define Title styles
-        title: ["19px", { lineHeight: "1.3",}],
+        title: ["19px", { lineHeight: "1.3" }],
         // Define Body styles
         body: ["16px", { lineHeight: "1.3" }],
         // Define Caption styles
         caption: ["13px", { lineHeight: "1.3" }],
         "caption-two": ["11px", { lineHeight: "1.3" }],
-                
       },
       colors: {
         // General colors
@@ -63,5 +62,8 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [require("daisyui")],
+  daisyui: {
+    themes: [""],
+  },
 };

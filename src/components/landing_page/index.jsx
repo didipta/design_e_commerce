@@ -4,6 +4,7 @@ import Option from "./Option";
 import FeatureProduct from "./FeatureProduct";
 import BigDeal from "./BigDeal";
 import Sliders from "./Slider";
+import Banner from "./Banner";
 
 const LandingPage = () => {
   return (
@@ -11,6 +12,7 @@ const LandingPage = () => {
       <Hero />
       <Option />
       <FeatureProduct />
+      <Banner />
       <Sliders/>
       <BigDeal />
     </div>

@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -34,6 +35,10 @@ body {
   font-family: "Manrope", sans-serif;
   background: var(--color-bg-default) !important;
 }
+.Pacifico {
+  font-family: "Pacifico", cursive;
+  font-size: 24px;
+}
 .container {
   @apply mx-auto;
 }
@@ -45,7 +50,7 @@ body {
 }
 .slick-prev {
   /* width: 0 !important; */
-  @apply lg:right-16 right-20 ;
+  @apply lg:right-16 right-20;
   left: unset !important;
   top: 0% !important;
   height: 0% !important;
@@ -56,7 +61,7 @@ body {
   /* width: 0 !important; */
   @apply lg:!right-5 !right-10;
   top: 0% !important;
-  
+
   height: 0% !important;
   z-index: 1;
   margin-top: -70px;

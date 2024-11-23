@@ -78,7 +78,7 @@ const FeatureProduct = () => {
           slidesToShow: 3,
           slidesToScroll: 2,
           infinite: true,
-          dots: true,
+          dots: false,
         },
       },
       {
@@ -87,7 +87,7 @@ const FeatureProduct = () => {
           slidesToShow: 2,
           slidesToScroll: 2,
           infinite: false,
-          dots: true,
+          dots: false,
         },
       },
       {
@@ -114,7 +114,7 @@ const FeatureProduct = () => {
       <div className="slider-container mt-6  featured">
         <Slider {...settings}>
           {products.map((product, index) => (
-            <div key={index} className=" mx-2 ">
+            <div key={index} className=" px-2 ">
               <ProductCard
                 img={product.img}
                 title={product.title}

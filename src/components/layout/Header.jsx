@@ -1,4 +1,3 @@
-
 import Link from "next/link";
 import React from "react";
 import Logo from "../utils/Logo";
@@ -39,9 +38,9 @@ const Header = () => {
             </ul>
           </div>
           <Link href="#" className="flex items-center space-x-2">
-            <Logo/>
+            <Logo />
 
-            <span className=" text-h5 font-semibold font-semibold text-gray-800">
+            <span className=" text-h5 font-semibold text-text-base">
               We<span className="text-purple-600">5</span>ive
             </span>
           </Link>
@@ -106,7 +105,7 @@ const Header = () => {
             </div>
             <a href="#" className="text-gray-600 md:hidden block">
               <svg
-                 width="20"
+                width="20"
                 height="21"
                 viewBox="0 0 16 17"
                 fill="none"

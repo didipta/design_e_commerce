@@ -3,7 +3,7 @@ import React from "react";
 const Option = () => {
   return (
     <div
-      className="w-full bg-[#6341c2] bg-blend-overlay bg-center bg-cover"
+      className="w-full bg-[#6441C2] bg-blend-overlay bg-center bg-cover"
       style={{
         backgroundImage: "url('images/boxs.png')",
       }}

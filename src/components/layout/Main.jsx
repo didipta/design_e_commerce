@@ -4,7 +4,9 @@ import Header from "./Header";
 const Main = ({ children }) => {
   return (
     <div>
-      <Header />
+      <div className=" fixed z-[1000] w-full">
+        <Header />
+      </div>
       {children}
     </div>
   );

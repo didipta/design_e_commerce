@@ -82,10 +82,10 @@ const Footer = () => {
         <div className="container mx-auto grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-8 md:p-4">
           <div>
             <h3 className="font-semibold mb-2">Contact Us</h3>
-            <p className="text-sm">support@we5ive.com</p>
+            <p className="text-body">support@we5ive.com</p>
           </div>
           <div>
-            <ul className="text-sm space-y-2">
+            <ul className="text-body space-y-2">
               <li>
                 <a href="#" className="hover:underline">
                   About Us
@@ -100,7 +100,7 @@ const Footer = () => {
           </div>
 
           <div>
-            <ul className="text-sm space-y-2">
+            <ul className="text-body space-y-2">
               <li>
                 <a href="#" className="hover:underline">
                   Privacy Policy

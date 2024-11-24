@@ -48,9 +48,9 @@ const ReviewAndRating = () => {
         </select>
       </div>
 
-      <div className=" grid grid-cols-12 justify-between items-start py-6">
+      <div className=" grid grid-cols-12 gap-4 justify-between items-start py-6">
         {/* Individual Reviews */}
-        <div className=" col-span-8 space-y-6 pr-6">
+        <div className=" lg:col-span-8 col-span-12 space-y-6 pr-6">
           <div className="space-y-6">
             {reviews.map((review, index) => (
               <React.Fragment key={index}>
@@ -64,7 +64,7 @@ const ReviewAndRating = () => {
         </div>
 
         {/* Rating Breakdown */}
-        <div className=" col-span-4">
+        <div className=" lg:col-span-4 col-span-12">
           <div className="flex items-center gap-2 text-caption font-semibold py-4">
             <h3 className=" ">Product Review</h3>
             <a href="#" className="text-primary-600">

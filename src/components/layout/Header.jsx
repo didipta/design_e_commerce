@@ -1,8 +1,10 @@
 import Link from "next/link";
 import React from "react";
 import Logo from "../utils/Logo";
+import { useRouter } from "next/router";
 
 const Header = () => {
+  const router = useRouter();
   return (
     <div className="bg-[#F5F3FF]">
       <div className="navbar container">
@@ -29,11 +31,33 @@ const Header = () => {
               className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
             >
               <li>
-                <a>Item 1</a>
+                <Link
+                  href="/"
+                  className={`${
+                    router.pathname === "/"
+                      ? "text-primary-600"
+                      : "text-text-muted"
+                  }`}
+                >
+                  Home
+                </Link>
               </li>
 
               <li>
-                <a>Item 3</a>
+                <a href="#" className=" hover:text-primary-500">
+                  Shop
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-primary-500">
+                  Deals
+                </a>
+              </li>
+
+              <li>
+                <a href="#" className="hover:text-primary-500">
+                  {"What's"} New
+                </a>
               </li>
             </ul>
           </div>
@@ -48,24 +72,31 @@ const Header = () => {
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1 text-body font-semibold text-text-muted">
             <li>
-              <a href="#" class="text-primary-600">
+              <Link
+                href="/"
+                className={`${
+                  router.pathname === "/"
+                    ? "text-primary-600"
+                    : "text-text-muted hover:text-primary-500"
+                }`}
+              >
                 Home
-              </a>
+              </Link>
             </li>
 
             <li>
-              <a href="#" class=" hover:text-primary-500">
+              <a href="#" className=" hover:text-primary-500">
                 Shop
               </a>
             </li>
             <li>
-              <a href="#" class="hover:text-primary-500">
+              <a href="#" className="hover:text-primary-500">
                 Deals
               </a>
             </li>
 
             <li>
-              <a href="#" class="hover:text-primary-500">
+              <a href="#" className="hover:text-primary-500">
                 {"What's"} New
               </a>
             </li>
@@ -90,15 +121,15 @@ const Header = () => {
                   <path
                     d="M11.6667 12.1666L14.6667 15.1666"
                     stroke="#1D1D1D"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeWidth="1.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   />
                   <path
                     d="M13.3333 7.83337C13.3333 4.51967 10.647 1.83337 7.33325 1.83337C4.01955 1.83337 1.33325 4.51967 1.33325 7.83337C1.33325 11.1471 4.01955 13.8334 7.33325 13.8334C10.647 13.8334 13.3333 11.1471 13.3333 7.83337Z"
                     stroke="#1D1D1D"
-                    stroke-width="1.5"
-                    stroke-linejoin="round"
+                    strokeWidth="1.5"
+                    strokeLinejoin="round"
                   />
                 </svg>
               </span>
@@ -114,15 +145,15 @@ const Header = () => {
                 <path
                   d="M11.6667 12.1666L14.6667 15.1666"
                   stroke="#1D1D1D"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeWidth="1.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 />
                 <path
                   d="M13.3333 7.83337C13.3333 4.51967 10.647 1.83337 7.33325 1.83337C4.01955 1.83337 1.33325 4.51967 1.33325 7.83337C1.33325 11.1471 4.01955 13.8334 7.33325 13.8334C10.647 13.8334 13.3333 11.1471 13.3333 7.83337Z"
                   stroke="#1D1D1D"
-                  stroke-width="1.5"
-                  stroke-linejoin="round"
+                  strokeWidth="1.5"
+                  strokeLinejoin="round"
                 />
               </svg>
             </a>
@@ -137,12 +168,12 @@ const Header = () => {
                 <path
                   d="M3.87289 20.5194L2.66933 13.3398C2.48735 12.2543 2.39637 11.7115 2.68773 11.3558C2.9791 11 3.51461 11 4.58564 11H19.4144C20.4854 11 21.0209 11 21.3123 11.3558C21.6036 11.7115 21.5126 12.2543 21.3307 13.3398L20.1271 20.5194C19.7282 22.8991 19.5287 24.0889 18.7143 24.7945C17.9 25.5 16.726 25.5 14.3782 25.5H9.62182C7.27396 25.5 6.10003 25.5 5.28565 24.7945C4.47127 24.0889 4.27181 22.8991 3.87289 20.5194Z"
                   stroke="#1D1D1D"
-                  stroke-width="1.5"
+                  strokeWidth="1.5"
                 />
                 <path
                   d="M17.5 11C17.5 7.96243 15.0376 5.5 12 5.5C8.96243 5.5 6.5 7.96243 6.5 11"
                   stroke="#1D1D1D"
-                  stroke-width="1.5"
+                  strokeWidth="1.5"
                 />
 
                 <path
@@ -165,14 +196,14 @@ const Header = () => {
                 <path
                   d="M6.57757 15.9816C5.1628 16.824 1.45336 18.5441 3.71266 20.6966C4.81631 21.748 6.04549 22.5 7.59087 22.5H16.4091C17.9545 22.5 19.1837 21.748 20.2873 20.6966C22.5466 18.5441 18.8372 16.824 17.4224 15.9816C14.1048 14.0061 9.89519 14.0061 6.57757 15.9816Z"
                   stroke="#1D1D1D"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeWidth="1.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 />
                 <path
                   d="M16.5 7C16.5 9.48528 14.4853 11.5 12 11.5C9.51472 11.5 7.5 9.48528 7.5 7C7.5 4.51472 9.51472 2.5 12 2.5C14.4853 2.5 16.5 4.51472 16.5 7Z"
                   stroke="#1D1D1D"
-                  stroke-width="1.5"
+                  strokeWidth="1.5"
                 />
               </svg>
             </a>

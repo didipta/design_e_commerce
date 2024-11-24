@@ -1,7 +1,7 @@
 const Arrow = ({ className, style, onClick, arrowside }) => (
   <div
     className={className}
-    style={{ ...style, display: "block",}}
+    style={{ ...style, display: "block" }}
     onClick={onClick}
   >
     {arrowside === "left" ? (
@@ -21,21 +21,21 @@ const Arrow = ({ className, style, onClick, arrowside }) => (
             rx="15.5"
             transform="rotate(180 32.5 33)"
             stroke="#7E53D4"
-            shape-rendering="crispEdges"
+            shapeRendering="crispEdges"
           />
           <path
             d="M9.00002 17.5002H25"
             stroke="#7E53D4"
-            stroke-width="1.5"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeWidth="1.5"
+            strokeLinecap="round"
+            strokeLinejoin="round"
           />
           <path
             d="M13.9997 12.5C13.9997 12.5 8.99976 16.1824 8.99976 17.5C8.99976 18.8176 13.9998 22.5 13.9998 22.5"
             stroke="#7E53D4"
-            stroke-width="1.5"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeWidth="1.5"
+            strokeLinecap="round"
+            strokeLinejoin="round"
           />
         </g>
         <defs>
@@ -46,9 +46,9 @@ const Arrow = ({ className, style, onClick, arrowside }) => (
             width="34"
             height="34"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feColorMatrix
               in="SourceAlpha"
               type="matrix"
@@ -92,21 +92,21 @@ const Arrow = ({ className, style, onClick, arrowside }) => (
             height="31"
             rx="15.5"
             stroke="#7E53D4"
-            shape-rendering="crispEdges"
+            shapeRendering="crispEdges"
           />
           <path
             d="M25 17.4998H9"
             stroke="#7E53D4"
-            stroke-width="1.5"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeWidth="1.5"
+            strokeLinecap="round"
+            strokeLinejoin="round"
           />
           <path
             d="M20.0003 22.5C20.0003 22.5 25.0002 18.8176 25.0002 17.5C25.0002 16.1824 20.0002 12.5 20.0002 12.5"
             stroke="#7E53D4"
-            stroke-width="1.5"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeWidth="1.5"
+            strokeLinecap="round"
+            strokeLinejoin="round"
           />
         </g>
         <defs>
@@ -117,9 +117,9 @@ const Arrow = ({ className, style, onClick, arrowside }) => (
             width="34"
             height="34"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feColorMatrix
               in="SourceAlpha"
               type="matrix"

@@ -181,7 +181,7 @@ const Header = () => {
                   fill="white"
                 />
               </svg>
-              <div className="absolute top-0 right-0 -mt-0 -mr-0 bg-background-dark text-white rounded-full w-4 h-4 text-caption-two flex items-center justify-center">
+              <div className="absolute top-0 right-0 -mt-0 -mr-0 bg-background-dark text-text-light rounded-full w-4 h-4 text-caption-two flex items-center justify-center">
                 2
               </div>
             </a>

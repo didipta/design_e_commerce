@@ -1,5 +1,6 @@
 import React from "react";
 import DetailsSection from "./DetailsSection";
+import RelatedProducts from "./RelatedProducts";
 
 const ProductDetails = () => {
   return (
@@ -12,6 +13,7 @@ const ProductDetails = () => {
 
       <div>
         <DetailsSection />
+        <RelatedProducts />
       </div>
     </div>
   );

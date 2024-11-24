@@ -5,7 +5,7 @@ import Logo from "../utils/Logo";
 
 const Footer = () => {
   return (
-    <footer className="bg-black text-white">
+    <footer className="bg-black text-text-light">
       <div className="container mx-auto grid md:grid-cols-2 grid-cols-1 gap-8 py-12 px-6">
         <div className=" space-y-7 md:p-4">
           <Link href="#" className="flex items-center space-x-2">
@@ -70,7 +70,7 @@ const Footer = () => {
             />
             <button
               type="submit"
-              className="bg-purple-600 text-white px-5 py-3 rounded-r-md hover:bg-purple-700"
+              className="bg-purple-600 text-text-light px-5 py-3 rounded-r-md hover:bg-purple-700"
             >
               Subscribe
             </button>

@@ -23,7 +23,7 @@ const ProductCard = ({
             className="w-[286px] h-[287px] object-cover object-center"
           />
           {off && (
-            <div className="absolute top-0 right-4  w-14  bg-primary-600 text-white px-3 pb-2 rounded-b-full text-center">
+            <div className="absolute top-0 right-4  w-14  bg-primary-600 text-text-light px-3 pb-2 rounded-b-full text-center">
               Up to 50%
             </div>
           )}
@@ -71,7 +71,7 @@ const ProductCard = ({
         </div>
       </Link>
       <div>
-        <button className="w-full h-[40px] border border-primary-600 rounded-lg text-primary-600 font-semibold">
+        <button className="w-full h-[40px] border border-primary-600 rounded-lg hover:bg-primary-700 hover:text-text-light text-primary-600 font-semibold">
           Add to Cart
         </button>
       </div>

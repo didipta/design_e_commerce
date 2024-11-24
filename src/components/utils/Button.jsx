@@ -2,11 +2,14 @@ import React from "react";
 
 const Button = () => {
   return (
-    <div className=" flex">
-      <button className="w-[142px] h-[48px] rounded-full bg-primary-500 text-text-light">
+    <div className="flex group">
+      {/* Main Button */}
+      <button className="w-[142px] h-[48px] rounded-full bg-primary-500 text-text-light group-hover:bg-primary-700 group-hover:scale-105 transition-transform duration-300 ease-in-out">
         Shop Now
       </button>
-      <button className="w-[48px] h-[48px] rounded-full bg-primary-500 text-text-light flex items-center justify-center">
+
+      {/* Icon Button */}
+      <button className="w-[48px] h-[48px] rounded-full bg-primary-500 text-text-light flex items-center justify-center group-hover:bg-primary-700 group-hover:rotate-90 transition-all duration-300 ease-in-out">
         <svg
           width="24"
           height="24"

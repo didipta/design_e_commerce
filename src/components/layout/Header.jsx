@@ -110,7 +110,7 @@ const Header = () => {
                 placeholder="Search"
                 className="md:w-[242px] md:h-[32px] px-8 rounded-full bg-background-default text-[14px] focus:ring-2 focus:ring-primary-300 focus:outline-none"
               />
-              <span className="absolute left-2 top-1/2 transform -translate-y-1/2 text-gray-400">
+              <span className="absolute left-2 top-1/2 transform -translate-y-1/2 text-text-muted">
                 <svg
                   width="16"
                   height="17"

@@ -39,7 +39,7 @@ const ProductInfo = () => {
           />
         </svg>
 
-        <span className="ml-2 text-gray-400">(4.0)</span>
+        <span className="ml-2 text-text-muted">(4.0)</span>
         <a href="#" className="text-primary-600 ml-2 text-body">
           121 reviews
         </a>

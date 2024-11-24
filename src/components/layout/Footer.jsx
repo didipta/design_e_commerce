@@ -6,7 +6,7 @@ import Logo from "../utils/Logo";
 const Footer = () => {
   return (
     <footer className="bg-black text-text-light">
-      <div className="container mx-auto grid md:grid-cols-2 grid-cols-1 gap-8 py-12 px-6">
+      <div className="container mx-auto grid lg:grid-cols-2 grid-cols-1 gap-8 py-12 px-6">
         <div className=" space-y-7 md:p-4">
           <Link href="#" className="flex items-center space-x-2">
             <svg

@@ -1,12 +1,16 @@
+import Image from "next/image";
+
 export const SingleReview = ({ reviewer, date, rating, comment, likes }) => {
   return (
     <div>
       <div className="flex items-center">
-        <img
-          src="https://via.placeholder.com/40"
-          alt="Reviewer Image"
-          className="w-10 h-10 rounded-full"
-        />
+        <Image src="/images/product-img-14 (1).png" 
+        width={0}
+        height={0}
+        sizes="100vw"
+        alt="user"
+        className="w-10 h-10 object-cover rounded-full"
+         />
         <div>
           <div className="ml-2 flex items-center gap-2">
             <p className=" text-body font-semibold">{reviewer}</p>

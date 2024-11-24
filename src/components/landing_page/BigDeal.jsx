@@ -130,7 +130,7 @@ const BigDeal = () => {
         </Slider>
       </div>
       <div className=" text-center mt-6">
-        <button className="w-[142px] h-[48px] rounded-lg bg-primary-500 text-text-light font-semibold">
+        <button className="max-w-[142px] w-full h-[48px] rounded-lg bg-primary-500 hover:bg-primary-700 text-text-light font-semibold">
           See More
         </button>
       </div>

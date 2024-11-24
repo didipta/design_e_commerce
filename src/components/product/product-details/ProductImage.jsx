@@ -54,7 +54,7 @@ const ProductImage = () => {
               sizes="100vw"
               className="w-full h-full object-contain object-center"
             />
-            <div className="absolute bottom-20 right-5 w-12 h-8 text-caption rounded-full grid justify-center items-center bg-primary-100 z-[1000] lg:hidden">
+            <div className="absolute bottom-10 right-5 w-12 h-8 text-caption rounded-full grid justify-center items-center bg-primary-100 z-[1000] lg:hidden">
               {index + 1}/{images.length}
             </div>
           </div>
